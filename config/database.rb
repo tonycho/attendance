@@ -13,11 +13,24 @@
 #     :socket    => '/tmp/mysql.sock'
 #   }
 #
-case Padrino.env
-  when :development then DataMapper.setup(:default, "sqlite3://" + Padrino.root('db', "development.db"))
-  when :production then DataMapper.setup(:default, ENV["DATABASE_URL"])
-  when :test then DataMapper.setup(:default, "sqlite3://" + Padrino.root('db', "test.db"))
-end
+ActiveRecord::Base.configurations[:development] = {
+  :adapter => 'sqlite3',
+  :database => Padrino.root('db', 'attendance_development.db')
+
+}
+
+ActiveRecord::Base.configurations[:production] = {
+  :adapter => 'postgresql',
+  :database => Padrino.root('db', 'attendance_production.db')
+
+}
+
+ActiveRecord::Base.configurations[:test] = {
+  :adapter => 'sqlite3',
+  :database => Padrino.root('db', 'attendance_test.db')
+
+}
+
 # Setup our logger
 ActiveRecord::Base.logger = logger
 

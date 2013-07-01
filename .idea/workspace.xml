@@ -11,6 +11,7 @@
     <file path="/member.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638146729" ignored="false" />
     <file path="/event.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638094398" ignored="false" />
     <file path="/Dummy.txt" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372639331113" ignored="false" />
+    <file path="/database.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372650820480" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,25 @@
       <file leaf-file-name="database.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.3251445">
+            <state line="22" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.4768786">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="root.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tk/root.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boot.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/boot.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -423,9 +442,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tk/root.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.3251445">
+        <state line="22" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.4768786">
           <folding />
         </state>
       </provider>
