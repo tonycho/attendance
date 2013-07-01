@@ -1,3 +1,13 @@
+:javascript
+  $(document).ready(function(){
+    $("#members").autocomplete({
+      source: "/admin/members/select",
+      select: function( event, ui ) {
+        $("#results").text("input was: '"+ this.value + "' and selection was: "+ ui.item.value);
+      }
+    });
+  });
+
 %ul.nav.nav-tabs
   %li=link_to tag_icon(:list, pat(:list)), url(:events, :index)
   %li=link_to tag_icon(:plus, pat(:new)), url(:events, :new)
@@ -6,3 +16,7 @@
 .tabs-content
   -form_for :event, url(:events, :update, :id => @event.id), :method => :put, :class => 'form-horizontal' do |f|
     =partial 'events/form', :locals => { :f => f }
+
+.ui-widget
+  %label{:for=>"members"}
+  %input#members

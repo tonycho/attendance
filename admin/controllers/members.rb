@@ -5,6 +5,11 @@ Attendance::Admin.controllers :members do
     render 'members/index'
   end
 
+  get "/select" do
+   content_type :json
+   Member.selectautocomplete(params[:term]).to_json
+  end
+
   get :new do
     @title = pat(:new_title, :model => 'member')
     @member = Member.new
