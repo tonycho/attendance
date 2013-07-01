@@ -1,0 +1,19 @@
+- error = @member.errors.include?(:first_name)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :first_name, :class => 'control-label'
+  .controls
+    =f.text_field :first_name, :class => 'input-xlarge input-with-feedback', :autofocus => true
+    %span.help-inline=error ? f.error_message_on(:first_name, :class => 'text-error') : pat(:example)
+- error = @member.errors.include?(:last_name)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :last_name, :class => 'control-label'
+  .controls
+    =f.text_field :last_name, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:last_name, :class => 'text-error') : pat(:example)
+
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:members, :index), :class => 'btn'
