@@ -30,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.3251445">
               <folding />
             </state>
           </provider>
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="14" selection-start="506" selection-end="506" vertical-scroll-proportion="0.6286127">
+            <state line="29" column="14" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,12 +115,12 @@
         <option value="$PROJECT_DIR$/db/migrate/004_create_memebers_and_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/004_create_members_and_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/002_create_members.rb" />
-        <option value="$PROJECT_DIR$/config/database.rb" />
         <option value="$PROJECT_DIR$/db/migrate/004_create_members_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/003_create_events.rb" />
         <option value="$PROJECT_DIR$/models/event.rb" />
         <option value="$PROJECT_DIR$/models/member.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.rb" />
       </list>
     </option>
   </component>
@@ -381,13 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/003_create_events.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="22" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
@@ -425,7 +418,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="506" selection-end="506" vertical-scroll-proportion="0.6286127">
+        <state line="29" column="14" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.3251445">
           <folding />
         </state>
       </provider>
