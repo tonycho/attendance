@@ -18,13 +18,21 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3'
 
 # Test requirements
 
 # Padrino Stable Gem
 gem 'padrino', '0.11.2'
 
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+ gem 'pg'
+ gem 'do_postgres'
+ gem 'dm-postgres-adapter'
+end
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
 

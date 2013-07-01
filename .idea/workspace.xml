@@ -10,6 +10,7 @@
     <file path="/003_create_events.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372637941953" ignored="false" />
     <file path="/member.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638146729" ignored="false" />
     <file path="/event.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638094398" ignored="false" />
+    <file path="/Dummy.txt" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372639331113" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="member.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/member.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="33" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0216763">
+            <state line="1" column="33" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+            <state line="29" column="14" selection-start="506" selection-end="506" vertical-scroll-proportion="0.6286127">
               <folding />
             </state>
           </provider>
@@ -114,12 +115,12 @@
         <option value="$PROJECT_DIR$/db/migrate/004_create_memebers_and_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/004_create_members_and_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/002_create_members.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.rb" />
         <option value="$PROJECT_DIR$/db/migrate/004_create_members_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/003_create_events.rb" />
         <option value="$PROJECT_DIR$/models/event.rb" />
         <option value="$PROJECT_DIR$/models/member.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -253,7 +254,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sinatra/event" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager">
@@ -380,13 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
@@ -424,7 +418,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/member.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0216763">
+        <state line="1" column="33" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="14" selection-start="506" selection-end="506" vertical-scroll-proportion="0.6286127">
           <folding />
         </state>
       </provider>
