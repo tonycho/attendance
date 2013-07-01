@@ -30,8 +30,6 @@ end
 
 group :production do
  gem 'pg'
- gem 'do_postgres'
- gem 'dm-postgres-adapter'
 end
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
