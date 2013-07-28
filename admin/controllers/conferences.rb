@@ -20,8 +20,8 @@ Event::Admin.controllers :conferences do
   end
 
   post :create do
-    @conference = Conference.new(params[:id])
     @category = Category.new(params[:category])
+    @conference = Conference.new(params[:conference])
     if @conference.save
       @title = pat(:create_title, :model => "conference #{@conference.id}")
       flash[:success] = pat(:create_success, :model => 'Conference')
