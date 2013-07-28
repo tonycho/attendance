@@ -20,6 +20,7 @@ Event::Admin.controllers :conferences do
   end
 
   post :create do
+    @conference = Conference.new(params[:id])
     @category = Category.new(params[:category])
     if @conference.save
       @title = pat(:create_title, :model => "conference #{@conference.id}")

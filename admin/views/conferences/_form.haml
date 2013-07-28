@@ -6,6 +6,25 @@
     %a.btn.btn-primary.btn-small{:role => "button", "data-toggle" => "modal", :href => "#modal_new_category"} Add New
     %span.help-inline=error ? f.error_message_on(:category_id, :class => 'text-error') : ""
 
+- error = @conference.errors.include?(:start_time)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label "Date", :for => "conference_start_time", :class => 'control-label'
+  .controls
+    =f.text_field :start_time, :value => (f.object.start_time.nil?) ? "" : f.object.start_time.strftime('%Y/%m/%d'), :class => 'datepicker input-xlarge input-with-feedback', :style=>'width:100px;'
+    %span.help-inline=error ? f.error_message_on(:start_time, :class => 'text-error') : ""
+
+.control-group
+  = label_tag "Speaker", :class => 'control-label'
+  .controls
+    =f.select :conference_host_ids, :options => Host.all.collect {|c| [ c.firstname, c.id ] }, :class => 'input-xlarge input-with-feedback',:include_blank => true, :style=>'width:200px;'
+    -#= hidden_field_tag "conference[host_ids][]", :value => nil
+    -#%ul.unstyled
+    -#  - Host.all.each do |host|
+    -#    %li
+    -#      = check_box_tag "conference[host_ids][]", :value => host.id, :checked => @conference.host_ids.include?(host.id), id: "host_#{host.id}"
+    -#      - label_tag nil, :for=>"host_#{host.id}", :style=>'font-weight:normal;' do
+    -#        = (host.firstname + " " + host.lastname).titleize
+
 - if @conference_options && @conference_options.count > 0
   .control-group{:class => error ? 'has-error' : ''}
     =f.label "Parent Event", :class => 'control-label', :for => :parent_conference_id
@@ -25,51 +44,35 @@
   =f.label :description, :class => 'control-label'
   .controls
     ~f.text_area :description, :class => 'input-xlarge input-with-feedback'
-    %span.help-inline=error ? f.error_message_on(:description, :class => 'text-error') : pat(:example)
+    %span.help-inline=error ? f.error_message_on(:description, :class => 'text-error') : ""
 
-- error = @conference.errors.include?(:start_time)
-.control-group{:class => error ? 'has-error' : ''}
-  =f.label :start_time, :class => 'control-label'
-  .controls
-    =f.text_field :start_time, :value => (f.object.start_time.nil?) ? "" : f.object.start_time.strftime('%Y/%m/%d'), :class => 'datepicker input-xlarge input-with-feedback', :style=>'width:100px;'
-    %span.help-inline=error ? f.error_message_on(:start_time, :class => 'text-error') : pat(:example)
 
-- error = @conference.errors.include?(:end_time)
-.control-group{:class => error ? 'has-error' : ''}
-  =f.label :end_time, :class => 'control-label'
-  .controls
-    =f.text_field :end_time, :value => (f.object.end_time.nil?) ? "" : f.object.end_time.strftime('%Y/%m/%d') , :class => 'datepicker input-xlarge input-with-feedback', :style=>'width:100px;'
-    %span.help-inline=error ? f.error_message_on(:end_time, :class => 'text-error') : pat(:example)
+-#- error = @conference.errors.include?(:end_time)
+-#.control-group{:class => error ? 'has-error' : ''}
+-#  =f.label :end_time, :class => 'control-label'
+-#  .controls
+-#    =f.text_field :end_time, :value => (f.object.end_time.nil?) ? "" : f.object.end_time.strftime('%Y/%m/%d') , :class => 'datepicker input-xlarge input-with-feedback', :style=>'width:100px;'
+-#    %span.help-inline=error ? f.error_message_on(:end_time, :class => 'text-error') : pat(:example)
+-#
+-#- error = @conference.errors.include?(:room)
+-#.control-group{:class => error ? 'has-error' : ''}
+-#  =f.label :room, :class => 'control-label'
+-#  .controls
+-#    =f.text_field :room, :class => 'input-xlarge input-with-feedback', :style=>'width:100px;'
+-#    %span.help-inline=error ? f.error_message_on(:room, :class => 'text-error') : pat(:example)
+-#
+-#- error = @conference.errors.include?(:fee)
+-#.control-group{:class => error ? 'has-error' : ''}
+-#  =f.label :fee, :class => 'control-label'
+-#  .controls
+-#    =f.text_field :fee, :class => 'input-xlarge input-with-feedback', :style=>'width:100px;'
+-#    %span.help-inline=error ? f.error_message_on(:fee, :class => 'text-error') : pat(:example)
 
-- error = @conference.errors.include?(:room)
-.control-group{:class => error ? 'has-error' : ''}
-  =f.label :room, :class => 'control-label'
-  .controls
-    =f.text_field :room, :class => 'input-xlarge input-with-feedback', :style=>'width:100px;'
-    %span.help-inline=error ? f.error_message_on(:room, :class => 'text-error') : pat(:example)
-
-- error = @conference.errors.include?(:fee)
-.control-group{:class => error ? 'has-error' : ''}
-  =f.label :fee, :class => 'control-label'
-  .controls
-    =f.text_field :fee, :class => 'input-xlarge input-with-feedback', :style=>'width:100px;'
-    %span.help-inline=error ? f.error_message_on(:fee, :class => 'text-error') : pat(:example)
-
-.control-group
-  = label_tag "Attending Hosts", :class => 'control-label'
-  .controls
-    = hidden_field_tag "conference[host_ids][]", :value => nil
-    %ul.unstyled
-      - Host.all.each do |host|
-        %li
-          = check_box_tag "conference[host_ids][]", :value => host.id, :checked => @conference.host_ids.include?(host.id), id: "host_#{host.id}"
-          - label_tag nil, :for=>"host_#{host.id}", :style=>'font-weight:normal;' do
-            = (host.firstname + " " + host.lastname).titleize
-%hr
-.control-group
-  = label_tag "Attachments", :class => 'control-label'
-  .controls
-    =partial '/medias/grid', :locals => { :medias => f.object.medias }
+-#%hr
+-#.control-group
+-#  = label_tag "Attachments", :class => 'control-label'
+-#  .controls
+-#    =partial '/medias/grid', :locals => { :medias => f.object.medias }
 
 %fieldset.control-group
 .form-actions

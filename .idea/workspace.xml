@@ -17,22 +17,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/004_create_members_events.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/models/event.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/models/member.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/accounts.rb" afterPath="$PROJECT_DIR$/admin/controllers/accounts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app.rb" afterPath="$PROJECT_DIR$/admin/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/stylesheets/application.css" afterPath="$PROJECT_DIR$/public/admin/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/conferences/_form.haml" afterPath="$PROJECT_DIR$/admin/views/conferences/_form.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/conferences/_grid.html.haml" afterPath="$PROJECT_DIR$/admin/views/conferences/_grid.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/layouts/application.haml" afterPath="$PROJECT_DIR$/admin/views/layouts/application.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/javascripts/application.js" afterPath="$PROJECT_DIR$/public/admin/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/apps.rb" afterPath="$PROJECT_DIR$/config/apps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/base.rb" afterPath="$PROJECT_DIR$/admin/controllers/base.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/public/admin/stylesheets/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.rb" afterPath="$PROJECT_DIR$/config/database.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/accounts/edit.haml" afterPath="$PROJECT_DIR$/admin/views/accounts/edit.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/base/index.haml" afterPath="$PROJECT_DIR$/admin/views/base/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/sessions/new.haml" afterPath="$PROJECT_DIR$/admin/views/sessions/new.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/sessions.rb" afterPath="$PROJECT_DIR$/admin/controllers/sessions.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/conferences.rb" afterPath="$PROJECT_DIR$/admin/controllers/conferences.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/conferences/new.haml" afterPath="$PROJECT_DIR$/admin/views/conferences/new.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="attendance.iws" />
@@ -43,7 +32,7 @@
     <file path="/003_create_events.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372637941953" ignored="false" />
     <file path="/member.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638146729" ignored="false" />
     <file path="/event.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638094398" ignored="false" />
-    <file path="/Dummy.txt" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374976243550" ignored="false" />
+    <file path="/Dummy.txt" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374976554178" ignored="false" />
     <file path="/database.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372650820480" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/config/database.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372715897966" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/Gemfile" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372715924056" ignored="false" />
@@ -59,21 +48,24 @@
     <file path="/registrant.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717823984" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/app.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717917998" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/layouts/application.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717958808" ignored="false" />
-    <file path="/application.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717941157" ignored="false" />
+    <file path="/application.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374992685397" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/edit.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717987378" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/index.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717991419" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/new.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717995918" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/_form.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721720833" ignored="false" />
-    <file path="/_form.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721713163" ignored="false" />
+    <file path="/_form.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374993611171" ignored="false" />
     <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/index.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720227878" ignored="false" />
-    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/_grid.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720212604" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/_grid.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374993980365" ignored="false" />
     <file path="/index.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720223886" ignored="false" />
-    <file path="/_grid.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720206572" ignored="false" />
+    <file path="/_grid.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374993943512" ignored="false" />
     <file path="$PROJECT_DIR$/../../splurgy/main/app/views/payments/_modal.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
     <file path="$PROJECT_DIR$/../../splurgy/main/app/models/payment.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
     <file path="$PROJECT_DIR$/../../splurgy/main/app/controllers/plans_controller.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
     <file path="$PROJECT_DIR$/../../splurgy/main/spec/models/payment_spec.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721433901" ignored="false" />
     <file path="/payment_spec.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721433901" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/_form.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374994015657" ignored="false" />
+    <file path="/conferences.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374993788438" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/new.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374994008074" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,15 +94,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="root.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tk/root.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="boot.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/boot.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,28 +103,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/account.rb">
+      <file leaf-file-name="application.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/layouts/application.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="30" column="41" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-11.041667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apps.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/apps.rb">
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/admin/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+            <state line="14" column="25" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="_form.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/conferences/_form.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="61" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2601156">
+            <state line="82" column="67" selection-start="4476" selection-end="4476" vertical-scroll-proportion="-23.541666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/categories/edit.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/conferences/edit.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="315" selection-end="343" vertical-scroll-proportion="-4.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/conferences/new.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="28" selection-start="349" selection-end="349" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conferences.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/controllers/conferences.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="45" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_grid.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/views/conferences/_grid.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="62" selection-start="2579" selection-end="2579" vertical-scroll-proportion="0.19847329">
               <folding />
             </state>
           </provider>
@@ -174,6 +202,12 @@
         <option value="$PROJECT_DIR$/models/member.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.rb" />
+        <option value="$PROJECT_DIR$/public/admin/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/admin/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/admin/views/conferences/_form.haml" />
+        <option value="$PROJECT_DIR$/admin/views/conferences/new.haml" />
+        <option value="$PROJECT_DIR$/admin/controllers/conferences.rb" />
+        <option value="$PROJECT_DIR$/admin/views/conferences/_grid.html.haml" />
       </list>
     </option>
   </component>
@@ -296,7 +330,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attendance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attendance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attendance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attendance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conferences" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attendance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attendance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="categories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,55 +523,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/database.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tk/root.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/boot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/account.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/apps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="3" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/account.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/apps.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
@@ -527,7 +574,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="61" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2601156">
+        <state line="13" column="51" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/stylesheets/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="41" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-11.041667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/conferences/_form.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="67" selection-start="4476" selection-end="4476" vertical-scroll-proportion="-23.541666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/categories/edit.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/conferences/edit.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="315" selection-end="343" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/conferences/new.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="349" selection-end="349" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/conferences.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="45" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/conferences/_grid.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="62" selection-start="2579" selection-end="2579" vertical-scroll-proportion="0.19847329">
           <folding />
         </state>
       </provider>

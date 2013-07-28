@@ -43,12 +43,12 @@
         %td.list-column.list-selectable
           =check_box_tag 'conference_ids[]', :value => conference.id, :class => 'list-selectable-checkbox'
         %td.list-column=conference.id
-        %td.list-column=conference.category.name
+        %td.list-column=conference.category.try(:name)
         %td.list-column{:style=>'white-space:nowrap;font-weight:bold;'}=conference.name
         %td.list-column{:style=>'white-space:nowrap;'}
           =conference.parent_conference.name if conference.parent_conference
         %td.list-column
-          - if conference.description.length > 200
+          - if conference.description && conference.description.length > 200
             = conference.description[0..200] + " ..."
           - else
             = conference.description
@@ -56,8 +56,8 @@
           %ul
             - conference.hosts.each do |host|
               %li= host.firstname + " " + host.lastname
-        %td.list-column=conference.start_time.strftime('%Y/%m/%d')
-        %td.list-column=conference.end_time.strftime('%Y/%m/%d')
+        %td.list-column=conference.start_time.strftime('%Y/%m/%d') if conference.start_time
+        %td.list-column=conference.end_time.strftime('%Y/%m/%d') if conference.end_time
         %td.list-column=conference.room
         %td.list-column.text-right=number_to_currency(conference.fee)
         -#%td.list-column=conference.currency_id
