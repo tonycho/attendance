@@ -25,7 +25,7 @@
               =button_to :logout, url(:sessions, :destroy), :method => :delete, :class => 'navbar-nav-form' do
                 =content_tag :button, tag_icon(:off), :type => :submit, :title => pat(:logout), :class => 'navbar-nav-form-link'
           %ul.nav.pull-left
-            - tabs = {'conferences' => "Services", 'news' => "News", 'registrants' => "Members", 'hosts' => "Speaker", 'medias' => "Media"}
+            - tabs = {'conferences' => "Services", 'registrants' => "Members", 'hosts' => "Speakers"}
             - tabs.each do |val, name|
               %li{:class => "dropdown navbar-module #{('active' if request.path_info =~ /^#{'/' + val}/)}"}
                 =link_to name, "/admin/#{val}"
