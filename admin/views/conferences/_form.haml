@@ -16,8 +16,8 @@
 .control-group
   = label_tag "Speaker", :class => 'control-label'
   .controls
-    =f.select :conference_host_ids, :options => Host.all.collect {|c| [ c.firstname, c.id ] }, :class => 'input-xlarge input-with-feedback',:include_blank => true, :style=>'width:200px;'
-    -#= hidden_field_tag "conference[host_ids][]", :value => nil
+    =select_tag "conference[host_ids][]", :options => Host.all.collect {|c| [ (c.firstname + " " + c.lastname).titleize, c.id ] }, :selected => (f.object.hosts.first.id if f.object.hosts.count>0), :class => 'input-xlarge input-with-feedback',:include_blank => true, :style=>'width:200px;'
+    = hidden_field_tag "conference[host_ids][]", :value => nil
     -#%ul.unstyled
     -#  - Host.all.each do |host|
     -#    %li
