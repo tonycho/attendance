@@ -27,12 +27,13 @@
 #
 Padrino.configure_apps do
   # enable :sessions
-  set :session_secret, '8a5566b4ff985ac8214cc6e327383bab25f270240e8acd32786a9260b48d81eb'
+  set :session_secret, '7689694ac07a15cba55f1e4c8ef5257cefbfa67ca2ae42de2950bdefe45e04b6'
   set :protection, true
   set :protect_from_csrf, true
+  set :allow_disabled_csrf, true
 end
 
 # Mounts the core application for this project
-Padrino.mount('Attendance::App', :app_file => Padrino.root('app/app.rb')).to('/')
+Padrino.mount('Event::App', :app_file => Padrino.root('app/app.rb')).to('/')
 
-Padrino.mount("Attendance::Admin", :app_file => File.expand_path('../../admin/app.rb', __FILE__)).to("/admin")
+Padrino.mount("Event::Admin", :app_file => File.expand_path('../../admin/app.rb', __FILE__)).to("/admin")

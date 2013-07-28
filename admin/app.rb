@@ -1,4 +1,4 @@
-module Attendance
+module Event
   class Admin < Padrino::Application
     use ActiveRecord::ConnectionAdapters::ConnectionManagement
     register Padrino::Rendering
@@ -34,8 +34,13 @@ module Attendance
     end
 
     access_control.roles_for :admin do |role|
-    role.project_module :events, '/events'
-    role.project_module :members, '/members'
+    role.project_module :media_types, '/media_types'
+    role.project_module :news, '/news'
+    role.project_module :medias, '/media'
+    role.project_module :hosts, '/hosts'
+    role.project_module :registrants, '/registrants'
+    role.project_module :conferences, '/conferences'
+    role.project_module :categories, '/categories'
     role.project_module :accounts, '/accounts'
     end
 

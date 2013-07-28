@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 4) do
+ActiveRecord::Schema.define(version: 10) do
 
   create_table "accounts", force: true do |t|
     t.string   "name"
@@ -23,23 +23,83 @@ ActiveRecord::Schema.define(version: 4) do
     t.datetime "updated_at"
   end
 
-  create_table "events", force: true do |t|
+  create_table "categories", force: true do |t|
     t.string   "name"
-    t.datetime "host_date"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "members", force: true do |t|
+  create_table "conferences", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.string   "room"
+    t.integer  "category_id"
+    t.float    "fee"
+    t.integer  "currency_id"
+    t.integer  "parent_conference_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "conferences_hosts", force: true do |t|
+    t.integer  "conference_id"
+    t.integer  "host_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "conferences_registrants", force: true do |t|
+    t.integer  "conference_id"
+    t.integer  "registrant_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "hosts", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "firstname"
+    t.string   "middleabbr"
+    t.string   "lastname"
+    t.string   "phone"
+    t.string   "mobile"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "media", force: true do |t|
+    t.string   "name"
+    t.integer  "media_type_id"
+    t.integer  "conference_id"
+    t.string   "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "media_types", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news", force: true do |t|
+    t.integer  "conference_id"
+    t.string   "title"
+    t.text     "note"
+    t.boolean  "notification"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "registrants", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "members_events", force: true do |t|
-    t.integer  "member_id"
-    t.integer  "event_id"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

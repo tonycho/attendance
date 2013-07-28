@@ -1,0 +1,55 @@
+- error = @host.errors.include?(:title)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :title, :class => 'control-label'
+  .controls
+    =f.select :title, :options => Host::HOST_TITLES, :class => 'styled input-xlarge input-with-feedback', :autofocus => true, :style => "width:70px;"
+    %span.help-inline=error ? f.error_message_on(:title, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:description)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :description, :class => 'control-label'
+  .controls
+    =f.text_area :description, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:description, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:firstname)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :firstname, :class => 'control-label'
+  .controls
+    =f.text_field :firstname, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:firstname, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:middleabbr)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :middleabbr, :class => 'control-label', :caption => "Middle Name"
+  .controls
+    =f.text_field :middleabbr, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:middleabbr, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:lastname)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :lastname, :class => 'control-label'
+  .controls
+    =f.text_field :lastname, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:lastname, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:phone)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :phone, :class => 'control-label'
+  .controls
+    =f.text_field :phone, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:phone, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:mobile)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :mobile, :class => 'control-label'
+  .controls
+    =f.text_field :mobile, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:mobile, :class => 'text-error') : pat(:example)
+- error = @host.errors.include?(:email)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :email, :class => 'control-label'
+  .controls
+    =f.text_field :email, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:email, :class => 'text-error') : pat(:example)
+
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:hosts, :index), :class => 'btn'

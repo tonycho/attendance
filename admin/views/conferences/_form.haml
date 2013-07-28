@@ -1,0 +1,80 @@
+- error = @conference.errors.include?(:category_id)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :category_id, :class => 'control-label'
+  .controls
+    =f.select :category_id, :options => Category.all.collect {|c| [ c.name, c.id ] }, :class => 'input-xlarge input-with-feedback',:include_blank => true, :style=>'width:200px;'
+    %a.btn.btn-primary.btn-small{:role => "button", "data-toggle" => "modal", :href => "#modal_new_category"} Add New
+    %span.help-inline=error ? f.error_message_on(:category_id, :class => 'text-error') : ""
+
+- if @conference_options && @conference_options.count > 0
+  .control-group{:class => error ? 'has-error' : ''}
+    =f.label "Parent Event", :class => 'control-label', :for => :parent_conference_id
+    .controls
+      =f.select :parent_conference_id, :options => @conference_options, :class => 'input-xlarge input-with-feedback',:include_blank => true, :style=>'width:200px;'
+      %span.help-inline=error ? f.error_message_on(:category_id, :class => 'text-error') : ""
+
+- error = @conference.errors.include?(:name)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :name, :class => 'control-label'
+  .controls
+    =f.text_field :name, :class => 'input-xlarge input-with-feedback', :autofocus => true
+    %span.help-inline=error ? f.error_message_on(:name, :class => 'text-error') : ""
+
+- error = @conference.errors.include?(:description)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :description, :class => 'control-label'
+  .controls
+    ~f.text_area :description, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:description, :class => 'text-error') : pat(:example)
+
+- error = @conference.errors.include?(:start_time)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :start_time, :class => 'control-label'
+  .controls
+    =f.text_field :start_time, :value => (f.object.start_time.nil?) ? "" : f.object.start_time.strftime('%Y/%m/%d'), :class => 'datepicker input-xlarge input-with-feedback', :style=>'width:100px;'
+    %span.help-inline=error ? f.error_message_on(:start_time, :class => 'text-error') : pat(:example)
+
+- error = @conference.errors.include?(:end_time)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :end_time, :class => 'control-label'
+  .controls
+    =f.text_field :end_time, :value => (f.object.end_time.nil?) ? "" : f.object.end_time.strftime('%Y/%m/%d') , :class => 'datepicker input-xlarge input-with-feedback', :style=>'width:100px;'
+    %span.help-inline=error ? f.error_message_on(:end_time, :class => 'text-error') : pat(:example)
+
+- error = @conference.errors.include?(:room)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :room, :class => 'control-label'
+  .controls
+    =f.text_field :room, :class => 'input-xlarge input-with-feedback', :style=>'width:100px;'
+    %span.help-inline=error ? f.error_message_on(:room, :class => 'text-error') : pat(:example)
+
+- error = @conference.errors.include?(:fee)
+.control-group{:class => error ? 'has-error' : ''}
+  =f.label :fee, :class => 'control-label'
+  .controls
+    =f.text_field :fee, :class => 'input-xlarge input-with-feedback', :style=>'width:100px;'
+    %span.help-inline=error ? f.error_message_on(:fee, :class => 'text-error') : pat(:example)
+
+.control-group
+  = label_tag "Attending Hosts", :class => 'control-label'
+  .controls
+    = hidden_field_tag "conference[host_ids][]", :value => nil
+    %ul.unstyled
+      - Host.all.each do |host|
+        %li
+          = check_box_tag "conference[host_ids][]", :value => host.id, :checked => @conference.host_ids.include?(host.id), id: "host_#{host.id}"
+          - label_tag nil, :for=>"host_#{host.id}", :style=>'font-weight:normal;' do
+            = (host.firstname + " " + host.lastname).titleize
+%hr
+.control-group
+  = label_tag "Attachments", :class => 'control-label'
+  .controls
+    =partial '/medias/grid', :locals => { :medias => f.object.medias }
+
+%fieldset.control-group
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:conferences, :index), :class => 'btn'

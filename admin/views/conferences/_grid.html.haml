@@ -1,0 +1,77 @@
+%table#list.table.table-striped.table-hover.table-condensed
+  %thead
+    %tr
+      %th.header.list-menu
+        .dropdown
+          %a.list-menu-toggle.dropdown-toggle{:href => '#', :'data-toggle' => :dropdown}
+            =tag_icon :magic
+            %span.caret
+          %ul.list-menu.dropdown-menu{:role => :menu}
+            %li.list-menu-wrapper=link_to tag_icon(:check, pat(:select_all)), '#', :id => 'select-all', :class => 'list-menu-link'
+            %li.list-menu-wrapper.list-menu-wrapper-disabled
+              =link_to tag_icon(:'check-empty', pat(:deselect_all)), '#', :id => 'deselect-all', :class => 'list-menu-link list-menu-link-disabled'
+            %li.list-menu-divider.divider
+            %li.list-menu-wrapper.list-menu-wrapper-disabled
+              =link_to tag_icon(:trash, pat(:delete_selected)), '#', :id => 'delete-selected', :class => 'list-menu-link list-menu-link-disabled'
+              .list-menu-popover-delete-selected.popover.right
+                .arrow
+                %h3.popover-title=pat(:delete_selected_title)
+                .popover-content
+                  -form_tag url(:conferences, :destroy_many), :method => :delete do
+                    =hidden_field_tag :conference_ids, :'data-delete-many-ids' => true
+                    =submit_tag pat(:delete), :class =>'list-menu-popover-delete-selected-btn btn btn-danger btn-small'
+                    .btn.btn-small.cancel=pat(:cancel)
+      %th.header= mat(:conference, :id)
+      %th.header= mat(:conference, :category)
+      %th.header= mat(:conference, :name)
+      %th.header Parent Event
+      %th.header= mat(:conference, :description)
+      %th.header Hosts
+      %th.header= mat(:conference, :start_time)
+      %th.header= mat(:conference, :end_time)
+      %th.header= mat(:conference, :room)
+      %th.header.text-right= mat(:conference, :fee)
+      -#%th.header= mat(:conference, :currency_id)
+      -#%th.header= mat(:conference, :created_at)
+      -#%th.header= mat(:conference, :updated_at)
+      - if !readonly
+        %th.header.list-row-action-header
+
+  %tbody
+    -@conferences.each do |conference|
+      %tr.list-row
+        %td.list-column.list-selectable
+          =check_box_tag 'conference_ids[]', :value => conference.id, :class => 'list-selectable-checkbox'
+        %td.list-column=conference.id
+        %td.list-column=conference.category.name
+        %td.list-column{:style=>'white-space:nowrap;font-weight:bold;'}=conference.name
+        %td.list-column{:style=>'white-space:nowrap;'}
+          =conference.parent_conference.name if conference.parent_conference
+        %td.list-column
+          - if conference.description.length > 200
+            = conference.description[0..200] + " ..."
+          - else
+            = conference.description
+        %td.list-column
+          %ul
+            - conference.hosts.each do |host|
+              %li= host.firstname + " " + host.lastname
+        %td.list-column=conference.start_time.strftime('%Y/%m/%d')
+        %td.list-column=conference.end_time.strftime('%Y/%m/%d')
+        %td.list-column=conference.room
+        %td.list-column.text-right=number_to_currency(conference.fee)
+        -#%td.list-column=conference.currency_id
+        -#%td.list-column=time_ago_in_words conference.created_at
+        -#%td.list-column=time_ago_in_words conference.updated_at
+        - if !readonly
+          %td.list-column.list-row-action
+            .list-row-action-wrapper
+              =link_to tag_icon(:edit), :href => url(:conferences, :edit, :id => conference.id), :rel => :tooltip, :title => "#{pat(:edit)} conference", :class => 'list-row-action-wrapper-link'
+              =link_to tag_icon(:trash), :rel => :tooltip, :title => "#{pat(:delete)} conference", :class => 'list-row-action-delete-one list-row-action-wrapper-link'
+              .popover.list-row-action-popover-delete-one.left
+                .arrow
+                %h3.popover-title=pat(:delete, :model => "conference")
+                .popover-content
+                  -form_tag url(:conferences, :destroy, :id => conference.id), :method => :delete do
+                    =submit_tag pat(:delete), :class =>'list-row-action-popover-delete-one-btn btn btn-danger btn-small'
+                    .btn.btn-small.cancel=pat(:cancel)

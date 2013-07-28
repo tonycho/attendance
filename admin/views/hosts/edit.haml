@@ -1,0 +1,6 @@
+%ul.nav.nav-tabs
+  %li.active=link_to tag_icon(:edit, pat(:edit)), url(:hosts, :edit, :id => @host.id)
+
+.tabs-content
+  -form_for :host, url(:hosts, :update, :id => @host.id), :method => :put, :class => 'form-horizontal' do |f|
+    =partial 'hosts/form', :locals => { :f => f }

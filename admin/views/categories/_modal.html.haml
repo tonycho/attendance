@@ -1,0 +1,51 @@
+:javascript
+  $(document).ready(function(){
+    form_new_category = $("form#form_new_category");
+
+    $("#modal_new_category").on("shown", function() {
+      first_element = form_new_category.find("input:text").first()
+      first_element.select().focus();
+    })
+
+    $("#btn_new_category").on("click", function(e){
+      e.preventDefault();
+      $.post(
+        form_new_category.attr('action'),
+        form_new_category.serialize(),
+        function(data){
+          if (data.success){
+            form_new_category[0].reset();
+            $('#conference_category_id').append($('<option>', { value : data.resource.id }).text(data.resource.name)).val(data.resource.id);
+            $("#modal_new_category").modal("hide")
+          }
+        },
+        "json"
+      )
+      //$.ajax({
+      //  url:form_new_category.attr('action'),
+      //  type:"POST",
+      //  data:form_new_category.serialize(),
+      //  contentType:"application/json; charset=utf-8",
+      //  dataType:"json",
+      //  success: function(data){
+      //    if (data.id){
+      //      form_new_category[0].reset();
+      //      $('#conference_category_id').append($('<option>', { value : data.id }).text(data.name)).val(data.id);
+      //      $("#modal_new_category").modal("hide")
+      //    }
+      //  }
+      //})
+    })
+  })
+
+.modal#modal_new_category.fade
+  .modal-header
+    %strong Add a Category
+  .modal-body
+    -form_for :category, url(:categories, :create), :class => 'form-horizontal', :id => "form_new_category" do |f|
+      =partial 'categories/form', :locals => { :f => f, :hide_buttons => true }
+  .modal-footer
+    .pull-left
+      %button.btn.btn-small{"data-dismiss" => "modal"} Cancel
+    .pull-right
+      %button.btn.btn-primary.btn-small#btn_new_category{:href=>"#"} Save

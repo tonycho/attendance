@@ -1,0 +1,36 @@
+- error = @registrant.errors.include?(:first_name)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :first_name, :class => 'control-label'
+  .controls
+    =f.text_field :first_name, :class => 'input-xlarge input-with-feedback', :autofocus => true
+    %span.help-inline=error ? f.error_message_on(:first_name, :class => 'text-error') : pat(:example)
+- error = @registrant.errors.include?(:last_name)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :last_name, :class => 'control-label'
+  .controls
+    =f.text_field :last_name, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:last_name, :class => 'text-error') : pat(:example)
+- error = @registrant.errors.include?(:email)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :email, :class => 'control-label'
+  .controls
+    =f.text_field :email, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:email, :class => 'text-error') : pat(:example)
+
+%fieldset.control-group
+  = label_tag "Attending Events", :class => 'control-label'
+  .controls
+    = hidden_field_tag "registrant[conference_ids][]", :value => nil
+    - Conference.all.each do |conference|
+      = check_box_tag "registrant[conference_ids][]", :value => conference.id, :checked => @registrant.conference_ids.include?(conference.id), id: "conference_#{conference.id}"
+      = label_tag conference.name, :for=>"conference_#{conference.id}", :style=>'font-weight:normal;'
+      %br
+
+
+
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:registrants, :index), :class => 'btn'

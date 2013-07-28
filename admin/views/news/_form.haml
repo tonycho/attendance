@@ -1,0 +1,32 @@
+- error = @news.errors.include?(:conference_id)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label "Event", :class => 'control-label', :for => :media_conference_id
+  .controls
+    =f.select :conference_id, :options => Conference.all.collect {|c| [ c.name, c.id ] }, :class => 'styled input-xlarge input-with-feedback',:include_blank => true, :style=>'width:200px;'
+    -#%a.btn.btn-primary{:role => "button", "data-toggle" => "modal", :href => "#modal_category"} Add New
+    %span.help-inline=error ? f.error_message_on(:conference_id, :class => 'text-error') : pat(:example)
+- error = @news.errors.include?(:title)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :title, :class => 'control-label'
+  .controls
+    =f.text_field :title, :class => 'input-xlarge input-with-feedback', :autofocus => true
+    %span.help-inline=error ? f.error_message_on(:title, :class => 'text-error') : pat(:example)
+- error = @news.errors.include?(:note)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :note, :class => 'control-label'
+  .controls
+    ~f.text_area :note, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:note, :class => 'text-error') : pat(:example)
+- error = @news.errors.include?(:notification)
+%fieldset.control-group{:class => error ? 'has-error' : ''}
+  =f.label :notification, :class => 'control-label'
+  .controls
+    =f.check_box :notification, :class => 'input-xlarge input-with-feedback'
+    %span.help-inline=error ? f.error_message_on(:notification, :class => 'text-error') : pat(:example)
+
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:news, :index), :class => 'btn'

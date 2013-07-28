@@ -1,0 +1,8 @@
+%ul.nav.nav-tabs
+  %li.active=link_to tag_icon(:edit, pat(:edit)), url(:conferences, :edit, :id => @conference.id)
+
+.tabs-content
+  -form_for :conference, url(:conferences, :update, :id => @conference.id), :method => :put, :class => 'form-horizontal' do |f|
+    =partial 'conferences/form', :locals => { :f => f }
+
+= partial 'categories/modal'

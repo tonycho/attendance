@@ -15,7 +15,7 @@
 #
 ActiveRecord::Base.configurations[:development] = {
   :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'attendance_development.db')
+  :database => Padrino.root('db', 'event_development.db')
 
 }
 
@@ -32,7 +32,7 @@ ActiveRecord::Base.configurations[:production] = {
 
 ActiveRecord::Base.configurations[:test] = {
   :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'attendance_test.db')
+  :database => Padrino.root('db', 'event_test.db')
 
 }
 

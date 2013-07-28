@@ -1,4 +1,4 @@
-Attendance::Admin.controllers :accounts do
+Event::Admin.controllers :accounts do
   get :index do
     @title = "Accounts"
     @accounts = Account.all

@@ -1,0 +1,17 @@
+%table.table{:style=>"width:50%"}
+  %thead
+    %tr
+      %th=mat(:media, :name)
+      %th=mat(:media, :media_type_id)
+      %th File
+      %th Preview
+  %tbody
+    -medias.each do |media|
+      %tr.list-row
+        %td=media.name
+        %td=media.media_type_desc
+        %td=media.location
+        %td
+          - if media.media_type_id == 1
+            %a.fancybox{ "data-fancybox-group"=>"gallery", :href=> media.get_file_path}
+              = image_tag media.get_file_path, :style=>"width:100px;" , :class=> "thumbnail"

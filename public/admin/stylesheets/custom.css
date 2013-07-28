@@ -1,0 +1,25 @@
+input, textarea {
+    width: 50%;
+}
+
+.modal-body input, .modal-body textarea {
+    width:95%;
+}
+
+select {
+    width:auto;
+}
+
+textarea {
+    height:120px;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+}
+
+td.list-column ul, ul.unstyled {
+    padding:0px;
+    margin:0px;
+    list-style-type:none;
+}

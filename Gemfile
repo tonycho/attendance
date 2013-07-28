@@ -19,11 +19,6 @@ gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 
-# Test requirements
-
-# Padrino Stable Gem
-gem 'padrino', '0.11.2'
-
 group :development do
   gem 'sqlite3'
 end
@@ -31,6 +26,11 @@ end
 group :production do
  gem 'pg'
 end
+# Test requirements
+
+# Padrino Stable Gem
+gem 'padrino', '0.11.2'
+
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
 

@@ -1,4 +1,4 @@
-module Attendance
+module Event
   class App < Padrino::Application
     register SassInitializer
     use ActiveRecord::ConnectionAdapters::ConnectionManagement
@@ -8,6 +8,9 @@ module Attendance
 
     enable :sessions
 
+    get "/" do
+      redirect '/admin/'
+    end
     ##
     # Caching support
     #

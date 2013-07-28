@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc191c67-de2d-45de-91b4-9179d02ffa6b" name="Default" comment="" />
+    <list default="true" id="dc191c67-de2d-45de-91b4-9179d02ffa6b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/controllers/events.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/controllers/members.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/events/_form.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/events/edit.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/events/index.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/events/new.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/members/_form.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/members/edit.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/members/index.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/views/members/new.haml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/002_create_members.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/003_create_events.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/004_create_members_events.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/event.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/member.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/accounts.rb" afterPath="$PROJECT_DIR$/admin/controllers/accounts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app.rb" afterPath="$PROJECT_DIR$/admin/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/stylesheets/application.css" afterPath="$PROJECT_DIR$/public/admin/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/layouts/application.haml" afterPath="$PROJECT_DIR$/admin/views/layouts/application.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/javascripts/application.js" afterPath="$PROJECT_DIR$/public/admin/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/apps.rb" afterPath="$PROJECT_DIR$/config/apps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/base.rb" afterPath="$PROJECT_DIR$/admin/controllers/base.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/public/admin/stylesheets/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.rb" afterPath="$PROJECT_DIR$/config/database.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/accounts/edit.haml" afterPath="$PROJECT_DIR$/admin/views/accounts/edit.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/base/index.haml" afterPath="$PROJECT_DIR$/admin/views/base/index.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/sessions/new.haml" afterPath="$PROJECT_DIR$/admin/views/sessions/new.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/sessions.rb" afterPath="$PROJECT_DIR$/admin/controllers/sessions.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="attendance.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/004_create_members_and_events.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372636853146" ignored="false" />
@@ -10,8 +43,37 @@
     <file path="/003_create_events.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372637941953" ignored="false" />
     <file path="/member.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638146729" ignored="false" />
     <file path="/event.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372638094398" ignored="false" />
-    <file path="/Dummy.txt" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372652361214" ignored="false" />
+    <file path="/Dummy.txt" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1374976243550" ignored="false" />
     <file path="/database.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372650820480" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/config/database.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372715897966" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/Gemfile" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372715924056" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/db/migrate/005_create_conferences_registrants.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717775789" ignored="false" />
+    <file path="/005_create_conferences_registrants.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717763021" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/db/migrate/004_create_registrant.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717066621" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/db/migrate/004_create_registrants.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717083270" ignored="false" />
+    <file path="/004_create_registrants.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717083270" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/db/event_development.db" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/app/models/conference.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717815007" ignored="false" />
+    <file path="/conference.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717814018" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/app/models/registrant.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717823984" ignored="false" />
+    <file path="/registrant.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717823984" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/app.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717917998" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/layouts/application.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717958808" ignored="false" />
+    <file path="/application.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717941157" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/edit.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717987378" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/index.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717991419" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/new.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372717995918" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/registrants/_form.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721720833" ignored="false" />
+    <file path="/_form.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721713163" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/index.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720227878" ignored="false" />
+    <file path="$PROJECT_DIR$/../../sinatra/event/admin/views/conferences/_grid.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720212604" ignored="false" />
+    <file path="/index.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720223886" ignored="false" />
+    <file path="/_grid.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372720206572" ignored="false" />
+    <file path="$PROJECT_DIR$/../../splurgy/main/app/views/payments/_modal.html.haml" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
+    <file path="$PROJECT_DIR$/../../splurgy/main/app/models/payment.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
+    <file path="$PROJECT_DIR$/../../splurgy/main/app/controllers/plans_controller.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721348062" ignored="false" />
+    <file path="$PROJECT_DIR$/../../splurgy/main/spec/models/payment_spec.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721433901" ignored="false" />
+    <file path="/payment_spec.rb" changelist="dc191c67-de2d-45de-91b4-9179d02ffa6b" time="1372721433901" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="1" selection-start="798" selection-end="798" vertical-scroll-proportion="0.650289">
+            <state line="13" column="5" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -58,15 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="004_create_members_events.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/004_create_members_events.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="18" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="account.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/account.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,46 +129,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/event.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="34" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="member.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/member.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="33" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="003_create_events.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/003_create_events.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="apps.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/apps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+            <state line="33" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="9" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+            <state line="12" column="61" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2601156">
               <folding />
             </state>
           </provider>
@@ -127,6 +153,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -174,7 +208,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +302,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,13 +346,11 @@
     <frame x="0" y="22" width="1440" height="817" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67083335" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.67083335" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -327,6 +359,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32825485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -393,44 +427,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/apps.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/003_create_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/004_create_members_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/account.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/event.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="34" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/member.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+        <state line="13" column="5" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -449,6 +448,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/account.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/apps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="3" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/account.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/apps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="9" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
@@ -456,9 +490,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/apps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/account.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/tk/root.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="798" selection-end="798" vertical-scroll-proportion="0.650289">
+        <state line="13" column="5" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="61" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2601156">
           <folding />
         </state>
       </provider>

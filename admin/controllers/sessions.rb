@@ -1,4 +1,4 @@
-Attendance::Admin.controllers :sessions do
+Event::Admin.controllers :sessions do
   get :new do
     render "/sessions/new", nil, :layout => false
   end
